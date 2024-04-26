@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#190B0B"
+    tools:context=".RestauranteActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="34dp"
+        android:text="Cadastrar Restaurante"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <EditText
+            android:id="@+id/edtRestaurante"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edttext_radius"
+            android:ems="10"
+            android:hint="Nome do restaurante"
+            android:inputType="text"
+            android:paddingLeft="20dp" />
+
+        <EditText
+            android:id="@+id/edtEndereco"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edttext_radius"
+            android:ems="10"
+            android:hint="Endereço"
+            android:inputType="text"
+            android:paddingLeft="20dp" />
+
+        <EditText
+            android:id="@+id/edtTipoComida"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edttext_radius"
+            android:ems="10"
+            android:hint="Tipo de comida"
+            android:inputType="text"
+            android:paddingLeft="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="51dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="30dp"
+                android:text="Classificação:"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtClassificacao"
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/edttext_radius"
+                android:ems="10"
+                android:hint="5"
+                android:inputType="number"
+                android:paddingLeft="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
+
+            <EditText
+                android:id="@+id/edtLatitude"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edttext_radius"
+                android:ems="10"
+                android:hint="Latitude"
+                android:inputType="text"
+                android:paddingLeft="20dp" />
+
+            <EditText
+                android:id="@+id/edtLongitude"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edttext_radius"
+                android:ems="10"
+                android:hint="Longitude"
+                android:inputType="text"
+                android:paddingLeft="20dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edttext_radius_desc"
+            android:ems="10"
+            android:hint="Descrição"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingBottom="50dp"
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/buttonGravar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#fcba03"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingLeft="24dp"
+            android:text="Gravar"
+            android:textColor="#190B0B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <Button
+            android:id="@+id/buttonLista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#fcba03"
+            android:paddingLeft="24dp"
+            android:text="Ver lista"
+            android:textColor="#190B0B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
